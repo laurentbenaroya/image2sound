@@ -52,7 +52,5 @@ $ python compare_image_and_spectrogram.py --img images/signature_basique.jpg --w
 ![illustration](https://github.com/laurentbenaroya/image2sound/blob/main/demo_image.png "illustration")
 ### deactivate from pipenv virtual environment
 ```bash
-$ deactivate
+$ exit
 ```
-### re-run
-Open a new shell if there is an error, see https://stackoverflow.com/questions/58394338/using-pipenv-shell-after-pipenv-install-yields-shell-for-unknown-virtual-en
