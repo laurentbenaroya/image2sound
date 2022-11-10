@@ -53,3 +53,5 @@ $ python compare_image_and_spectrogram.py --img images/signature_basique.jpg --w
 ```bash
 deactivate
 ```
+### re-run
+Open a new shell if there is an error, see https://stackoverflow.com/questions/58394338/using-pipenv-shell-after-pipenv-install-yields-shell-for-unknown-virtual-en
