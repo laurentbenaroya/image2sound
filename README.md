@@ -49,6 +49,7 @@ visualize the original image and the spectrogram from the output audio :
 ```bash
 $ python compare_image_and_spectrogram.py --img images/signature_basique.jpg --wav audio/signature_basique.wav
 ```
+![illustration](https://github.com/laurentbenaroya/image2sound/blob/main/demo_image.png "illustration")
 ### deactivate from pipenv virtual environment
 ```bash
 $ deactivate
