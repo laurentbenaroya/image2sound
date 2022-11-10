@@ -1,6 +1,6 @@
 # image2sound
 Encapsulate an image into an audio file.  
-It uses the image as the spectrogram of the audio and recover the spectral phases through Griffin-Lim algorithm, using librosa package.
+It uses the image as the spectrogram of the audio and recover the spectral phases through Griffin-Lim algorithm, using librosa package.  
 Code written by Laurent Benaroya under GNU GPL v3 license.
 ## pipenv installation
 ```bash
