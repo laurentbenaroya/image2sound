@@ -9,9 +9,10 @@ matplotlib = "*"
 soundfile = "*"
 librosa = "*"
 pillow = "*"
+certifi = ">=2023.7.22"
 
 [dev-packages]
 
 [requires]
-python_version = "3.7"
-python_full_version = "3.7.4"
+python_version = "3.9"
+python_full_version = "3.9.2"
