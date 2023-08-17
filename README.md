@@ -6,19 +6,20 @@ Code written by Laurent Benaroya under GNU GPL v3 license.
 ```bash
 $ sudo apt install pipenv 
 ```
-__OR__ if you don't have root priviledges (see https://pipenv.pypa.io/en/latest/install/)
+__OR__ if you don't have root priviledges (see https://pipenv.pypa.io/en/latest/install/) => prerefered!!!
 ```bash
 $ pip install --user pipx
 $ pip install --upgrade pip
 $ pipx install pipenv
 $ pip install --user pipenv
-$ export PATH="/home/benaroya/.local/bin:$PATH"
+$ export PYTHON_BIN_PATH="$(python3 -m site --user-base)/bin"
+$ export PATH="$PATH:$PYTHON_BIN_PATH"
 ```
 You can add the export PATH in your ~/.bashrc  
 *Note : pipenv problem : https://github.com/pypa/pipenv/issues/5052*
 ## Create project
 ```bash
-$ pipenv --python 3.7
+$ pipenv --python 3.9
 $ pipenv install
 $ pipenv shell
 ```
@@ -47,7 +48,7 @@ try the options *--inv* (usefull when the image is mostly black) and *--custom* 
 ### visualization and comparison
 visualize the original image and the spectrogram from the output audio :
 ```bash
-$ python compare_image_and_spectrogram.py --img images/signature_basique.jpg --wav audio/signature_basique.wav
+$ python image2sound.py --img demo/signature_basique.jpg --wav demo/signature_basique.wav
 ```
 ![illustration](https://github.com/laurentbenaroya/image2sound/blob/main/demo_image.png "illustration")
 ### deactivate from pipenv virtual environment
