@@ -23,6 +23,7 @@ $ pipenv --python 3.9
 $ pipenv install
 $ pipenv shell
 ```
+You may need to install `tkinter` with the command `sudo apt-get install python3-tk` for `matplotlib` display in `compare_image_and_spectrogram.py` (not compulsory).
 ## Go for it !!!
 
 ### audio generation
@@ -39,7 +40,7 @@ $ python image2sound.py -h
   --custom    custom settings for GL
 
 ```bash
-$ python image2sound.py --img images/signature_basique.jpg --wav audio/signature_basique.wav
+$ python image2sound.py --img demo/signature_basique.jpg --wav demo/signature_basique.wav
 ```
 try the options *--inv* (usefull when the image is mostly black) and *--custom* (try it for fun)
 
@@ -48,7 +49,7 @@ try the options *--inv* (usefull when the image is mostly black) and *--custom* 
 ### visualization and comparison
 visualize the original image and the spectrogram from the output audio :
 ```bash
-$ python image2sound.py --img demo/signature_basique.jpg --wav demo/signature_basique.wav
+$ python compare_image_and_spectrogram.py --img demo/signature_basique.jpg --wav demo/signature_basique.wav
 ```
 ![illustration](https://github.com/laurentbenaroya/image2sound/blob/main/demo_image.png "illustration")
 ### deactivate from pipenv virtual environment
